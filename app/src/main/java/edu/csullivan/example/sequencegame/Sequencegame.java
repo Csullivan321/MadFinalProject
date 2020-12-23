@@ -2,6 +2,7 @@ package edu.csullivan.example.sequencegame;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
@@ -12,6 +13,7 @@ import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -243,13 +245,9 @@ public class Sequencegame extends AppCompatActivity implements SensorEventListen
     }
 
     public void doScore(View view) {
-
-
-
         Intent scoredb = new Intent(view.getContext(), ScoreDatabase.class);
         startActivity(scoredb);
-
-
+        ListView showscore;
     }
 
     public static double round(double value, int places) {
